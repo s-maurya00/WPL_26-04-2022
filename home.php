@@ -13,16 +13,12 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- local js file link -->
-    <script src="js/script.js"></script>
-
-
+    
 </head>
 
 <body>
 
-    <?php include 'partials/header.php'?>
-
+    <?php require 'partials/header.php'?>
 
     <!-- home section starts  -->
 
@@ -114,6 +110,11 @@
 
     <!-- home section ends -->
 
+    <!-- included login page -->
+    <?php require 'partials/login.php'?>
+
+    <!-- included signup page -->
+    <?php require 'partials/signup.php'?>
 
     <section class="services" id="services">
 
@@ -150,9 +151,10 @@
     </section>
 
 
-    <?php include 'partials/footer.php'?>
+    <?php require 'partials/footer.php'?>
 
-
+    <!-- local js file link -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

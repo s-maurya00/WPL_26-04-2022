@@ -13,8 +13,6 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- local js file link -->
-    <script src="js/script.js"></script>
 
 </head>
 
@@ -93,6 +91,9 @@
     <!-- agents section ends -->
 
     <?php include 'partials/footer.php'?>
+
+    <!-- local js file link -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
