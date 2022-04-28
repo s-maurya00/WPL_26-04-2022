@@ -6,11 +6,11 @@
 
             <div id="close-signup-btn" class="fas fa-times"></div>
 
-            <form action="register.php" name="onlySignup" method="post">
+            <form action="" name="onlySignup" method="post">
                 <h3>sign Up</h3>
 
-                <span>username</span>
-                <input type="text" name="username" class="box" placeholder="enter a username" id="">
+                <span>name</span>
+                <input type="text" name="name" class="box" placeholder="enter your name" id="">
 
                 <span>email</span>
                 <input type="email" name="email" class="box" placeholder="enter your email" id="">
@@ -21,12 +21,10 @@
                 <span>confirm password</span>
                 <input type="password" name="cpassword" class="box" placeholder="confirm password" id="" required>
 
-                <div>
-                    <!-- I want to display the messege -->
-                    <span id="signupError"></span>
-                </div>
+                <input type="submit" name="signupSubmit" value="sign up" class="btn">
 
-                <input type="submit" name="signupSubmit" value="sign up" class="btn" onclick="valiPass()">
+                <p>Already have an account ? <button id="callLogin" style="background: none!important; font-size: 100%;"> <a
+                            href="#">login now</a></button></p>
             </form>
 
         </div>

@@ -1,3 +1,7 @@
+<?php
+    require 'partials/loginvalidator.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive real estate website design tutorial</title>
+    <title>Home</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -18,10 +22,13 @@
 
 <body>
 
-    <?php require 'partials/header.php'?>
+    <!-- shows messages -->
+    <?php require 'partials/message.php' ?>
+
+    <!-- adds header -->
+    <?php require 'partials/header.php' ?>
 
     <!-- home section starts  -->
-
     <section class="home" id="home">
 
         <form action="">
@@ -31,6 +38,7 @@
             <div class="buttons-container">
                 <a href="#" class="btn">for rent</a>
                 <a href="#" class="btn">for sell</a>
+                
             </div>
 
             <div class="inputBox">
@@ -102,12 +110,11 @@
                 </select>
             </div>
 
-            <input type="submit" value="search property" class="btn">
+            <input type="submit" name="searchSubmit" value="search property" class="btn">
 
         </form>
 
     </section>
-
     <!-- home section ends -->
 
     <!-- included login page -->
@@ -116,6 +123,7 @@
     <!-- included signup page -->
     <?php require 'partials/signup.php'?>
 
+    <!-- services section -->
     <section class="services" id="services">
 
         <h1 class="heading"> our <span>services</span> </h1>
@@ -151,6 +159,7 @@
     </section>
 
 
+    <!-- included footer section -->
     <?php require 'partials/footer.php'?>
 
     <!-- local js file link -->

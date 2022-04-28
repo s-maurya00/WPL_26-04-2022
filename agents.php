@@ -1,3 +1,7 @@
+<?php
+    include 'partials/loginvalidator.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agents</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -18,10 +22,13 @@
 
 <body>
 
-    <?php include 'partials/header.php'?>
+    <!-- shows messages -->
+    <?php require 'partials/message.php' ?>
+
+    <!-- adds header -->
+    <?php require 'partials/header.php' ?>
 
     <!-- agents section starts  -->
-
     <section class="agents" id="agents">
 
         <h1 class="heading"> professional <span>agents</span> </h1>
@@ -87,9 +94,15 @@
         </div>
 
     </section>
-
     <!-- agents section ends -->
 
+    <!-- included login page -->
+    <?php require 'partials/login.php'?>
+
+    <!-- included signup page -->
+    <?php require 'partials/signup.php'?>    
+
+    <!-- included footer section -->
     <?php include 'partials/footer.php'?>
 
     <!-- local js file link -->
