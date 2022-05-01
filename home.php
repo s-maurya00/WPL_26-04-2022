@@ -31,36 +31,29 @@
     <!-- home section starts  -->
     <section class="home" id="home">
 
-        <form action="">
+        <form action="" method="POST">
 
             <h3>find your perfect home</h3>
 
             <div class="buttons-container">
-                <a href="#" class="btn">for rent</a>
-                <a href="#" class="btn">for sell</a>
-                
+                <div class="button-container-1">
+                    <input type="radio" id="rent" name="room-sell-type" class="rad-btn" value="rent" required>
+                    <label for="rent">On rent</label>
+                </div>
+
+                <div class="button-container-1">
+                    <input type="radio" id="sell" name="room-sell-type" class="rad-btn" value="sell">
+                    <label for="sell">On sell</label>
+                </div>
             </div>
 
             <div class="inputBox">
-                <input type="search" name="" placeholder="neighborhood" id="">
-                <input type="search" name="" placeholder="city" id="">
-                <select name="" id="">
-                    <option value="" disabled hidden selected>minimum price</option>
-                    <option value="$5000">$5000</option>
-                    <option value="$10000">$10000</option>
-                    <option value="$15000">$15000</option>
-                    <option value="$20000">$20000</option>
-                    <option value="$25000">$25000</option>
-                </select>
-                <select name="" id="">
-                    <option value="" disabled hidden selected>maximum price</option>
-                    <option value="$30000">$30000</option>
-                    <option value="$35000">$35000</option>
-                    <option value="$40000">$40000</option>
-                    <option value="$45000">$45000</option>
-                    <option value="$50000">$50000</option>
-                </select>
-                <select name="" id="">
+
+                <input type="search" name="city" placeholder="city" id="city">
+
+                <input type="search" name="max-price" placeholder="maximum price" id="max-price">
+
+                <!-- <select name="prop-status" id="prop-status">
                     <option value="" disabled hidden selected>property status</option>
                     <option value="Ready To Move">Ready To Move</option>
                     <option value="under construction">under construction</option>
@@ -68,31 +61,35 @@
                     <option value="semi-furnished">semi-furnished</option>
                     <option value="unfurnished">unfurnished</option>
                 </select>
-                <select name="" id="">
+
+                <select name="prop-type" id="prop-type">
                     <option value="" disabled hidden selected>property type</option>
                     <option value="flat">flat</option>
                     <option value="house">house</option>
                     <option value="shop">shop</option>
                     <option value="warehouse">warehouse</option>
                     <option value="land">land</option>
-                </select>
-                <select name="" id="">
+                </select> -->
+
+                <select name="bhk" id="bhk">
                     <option value="" disabled hidden selected>BHK</option>
-                    <option value="1 BHK">1 BHK</option>
-                    <option value="2 BHK">2 BHK</option>
-                    <option value="3 BHK">3 BHK</option>
-                    <option value="4 BHK">4 BHK</option>
-                    <option value="5 BHK">5 BHK</option>
+                    <option value="1">1 BHK</option>
+                    <option value="2">2 BHK</option>
+                    <option value="3">3 BHK</option>
+                    <option value="4">4 BHK</option>
+                    <option value="5">5 BHK</option>
                 </select>
-                <select name="" id="">
+
+                <!-- <select name="" id="">
                     <option value="" disabled hidden selected>aminities</option>
                     <option value="parking space">parking space</option>
                     <option value="swimming pool">swimming pool</option>
                     <option value="playground">playground</option>
                     <option value="security">security</option>
                     <option value="all">all</option>
-                </select>
-                <select name="" id="">
+                </select> -->
+
+                <select name="bedroom" id="bedroom">
                     <option value="" disabled hidden selected>bedrooms</option>
                     <option value="1 bedroom">1 bedroom</option>
                     <option value="2 bedroom">2 bedroom</option>
@@ -100,14 +97,16 @@
                     <option value="4 bedroom">4 bedroom</option>
                     <option value="5 bedroom">5 bedroom</option>
                 </select>
-                <select name="" id="">
+
+                <!-- <select name="" id="">
                     <option value="" disabled hidden selected>bathrooms</option>
                     <option value="1 bathroom">1 bathroom</option>
                     <option value="2 bathroom">2 bathroom</option>
                     <option value="3 bathroom">3 bedroom</option>
                     <option value="4 bathroom">4 bathroom</option>
                     <option value="5 bathroom">5 bathroom</option>
-                </select>
+                </select> -->
+
             </div>
 
             <input type="submit" name="searchSubmit" value="search property" class="btn">
@@ -122,6 +121,16 @@
 
     <!-- included signup page -->
     <?php require 'partials/signup.php'?>
+
+    <section class="featured" id="featured">
+
+        <div class="box-container">
+    
+            <?php require 'partials/search_house.php' ?>
+
+        </div>
+
+    </section>
 
     <!-- services section -->
     <section class="services" id="services">

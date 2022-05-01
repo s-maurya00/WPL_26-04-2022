@@ -18,6 +18,8 @@
     
     if(mysqli_num_rows($select_house) > 0){
 
+        echo'<h3 class="heading"><span>Featured</span>Houses</h3>';
+        
         while($fetch_houses = mysqli_fetch_assoc($select_house)){
 
             echo'

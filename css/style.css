@@ -58,6 +58,7 @@ section{
 }
 
 .heading{
+    width: 100%;
     text-align: center;
     color:#333;
     font-size: 4rem;
@@ -395,7 +396,7 @@ header .icons #menu-bars{
 
 /* home starts here */
 .home{
-    min-height: 100vh;
+    min-height: 80vh;
     background:url(../images/home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -764,7 +765,8 @@ header .icons #menu-bars{
     padding: 2rem;
 }
 
-.add-house form label{
+.add-house form label,
+.home form label{
     width: 80%;
     text-align: center;
     color: #333;
@@ -779,7 +781,8 @@ header .icons #menu-bars{
 }
 
 .add-house form h2,
-.add-house form label{
+.add-house form label,
+.home form label{
     color:var(--red);
     background:var(--light-red);
     border-radius: .5rem;
@@ -795,17 +798,20 @@ header .icons #menu-bars{
     /* gap: 1.5rem; */
 }
 
-.add-house form .buttons-container .button-container-1{
+.add-house form .buttons-container .button-container-1,
+.home form .buttons-container .button-container-1{
     display: flex;
     width: 100%;
     align-items: center;
 }
 
-.add-house form .buttons-container .button-container-1 label{
+.add-house form .buttons-container .button-container-1 label,
+.home form .buttons-container .button-container-1 label{
     cursor: pointer;
 }
 
-.add-house form .buttons-container .button-container-1 .rad-btn{
+.add-house form .buttons-container .button-container-1 .rad-btn,
+.home form .buttons-container .button-container-1 .rad-btn{
     cursor: pointer;
     width: 10%;
 }
