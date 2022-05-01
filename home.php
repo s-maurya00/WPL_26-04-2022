@@ -1,5 +1,5 @@
 <?php
-    require 'partials/loginvalidator.php'
+    require 'includes/login_validator.php';
 ?>
 
 <!DOCTYPE html>

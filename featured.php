@@ -1,5 +1,5 @@
 <?php
-    include 'partials/loginvalidator.php'
+    include 'includes/login_validator.php';
 ?>
 
 <!DOCTYPE html>
@@ -28,8 +28,19 @@
     <!-- adds header -->
     <?php require 'partials/header.php' ?>
 
-    <!-- featured section starts  -->
+    <!-- trying to include dynamic images and data -->
     <section class="featured" id="featured">
+
+        <div class="box-container">
+
+            <?php require 'partials/fetch_house.php' ?>
+
+        </div>
+
+    </section>
+
+    <!-- featured section starts  -->
+    <!-- <section class="featured" id="featured">
 
         <h1 class="heading"> <span>featured</span> properties </h1>
 
@@ -64,7 +75,7 @@
                     </div>
                     <div class="details">
                         <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 rooms </h3>
                         <h3> <i class="fas fa-bath"></i> 2 baths </h3>
                     </div>
                     <div class="buttons">
@@ -103,7 +114,7 @@
                     </div>
                     <div class="details">
                         <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 rooms </h3>
                         <h3> <i class="fas fa-bath"></i> 2 baths </h3>
                     </div>
                     <div class="buttons">
@@ -142,7 +153,7 @@
                     </div>
                     <div class="details">
                         <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 rooms </h3>
                         <h3> <i class="fas fa-bath"></i> 2 baths </h3>
                     </div>
                     <div class="buttons">
@@ -181,7 +192,7 @@
                     </div>
                     <div class="details">
                         <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 rooms </h3>
                         <h3> <i class="fas fa-bath"></i> 2 baths </h3>
                     </div>
                     <div class="buttons">
@@ -220,7 +231,7 @@
                     </div>
                     <div class="details">
                         <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 rooms </h3>
                         <h3> <i class="fas fa-bath"></i> 2 baths </h3>
                     </div>
                     <div class="buttons">
@@ -259,7 +270,7 @@
                     </div>
                     <div class="details">
                         <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 rooms </h3>
                         <h3> <i class="fas fa-bath"></i> 2 baths </h3>
                     </div>
                     <div class="buttons">
@@ -271,7 +282,7 @@
 
         </div>
 
-    </section>
+    </section> -->
     <!-- featured section ends -->
 
     <!-- included login page -->

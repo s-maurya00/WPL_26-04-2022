@@ -61,3 +61,9 @@ window.onscroll = () =>{
     menu.classList.remove('fa-times');
     accInfo.classList.remove('active');
 }
+
+
+// returns false to disable login/signup in seller's webpage
+function returnFalse(){
+    return false;
+}

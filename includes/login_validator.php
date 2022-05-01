@@ -2,7 +2,7 @@
 
     session_start();
 
-    include 'includes/config.php';
+    include 'config.php';
 
     if(isset($_POST['signupSubmit'])){
 
