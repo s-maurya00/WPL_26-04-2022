@@ -7,10 +7,10 @@
 
     if(!isset($_SESSION['user_name'])){
         
-        // i don't understand how to send this message to home.php
+        // i don't understand how to send this message to index.php
         $message[] = "Login to access 'selling' section";
         
-        header("location: home.php");
+        header("location: index.php");
 
         echo '<script> callLogin(); </script>';
     }

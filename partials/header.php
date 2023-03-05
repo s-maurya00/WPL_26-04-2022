@@ -6,7 +6,7 @@
             <a href="#" class="logo"><span>real</span>Estate</a>
 
             <nav class="navbar">
-                <a href="home.php">home</a>
+                <a href="index.php">home</a>
                 <a href="featured.php">featured</a>
                 <a href="agents.php">agents</a>
                 <a href="'.(isset($_SESSION['user_name']) ? 'sell.php' : '#').'" onclick="callLogin()">rent / sell</a>
